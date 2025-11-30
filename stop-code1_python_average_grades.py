@@ -100,7 +100,7 @@ while True:
     number_of_votes = input("Inserisci il numero di voti che vuoi aggiungere: ")
     try:
         number_of_votes = int(number_of_votes)
-        if number_of_votes > 1 and number_of_votes < 10:
+        if number_of_votes >= 1 and number_of_votes < 10:
             insert_grade(number_of_votes)
             med = media(list_of_grades)
             print(list_of_grades)
