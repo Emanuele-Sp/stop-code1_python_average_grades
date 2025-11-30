@@ -12,7 +12,7 @@ def insert_grade(number_of_votes): # number_of_votes: list, subjects: list
             grade = input(f"Inserisci un voto da 0 a 10 per {subjects[i]} ")
             try:
                 grade = int(grade)
-                if grade >= 1 and grade < 10:
+                if grade >= 1 and grade <= 10:
                     total_list = []
                     total_list.append(subjects[i])
                     total_list.append(grade)
