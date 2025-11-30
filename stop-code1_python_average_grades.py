@@ -37,9 +37,10 @@ def insert_grade(number_of_votes): # number_of_votes: list, subjects: list
                 print("Inserisci un valore valido")   
                 
 def media(list_of_grades):
-    media = 0
-    for m in list_of_grades:
-        media += m
+    # media = 0
+    # for m in list_of_grades:
+        # media += m
+    media = sum(list_of_grades)
     return  media/len(list_of_grades)
         
 def print_result(med):
@@ -49,17 +50,19 @@ def print_result(med):
         print("Mi dispiace sei stato BOCCIATO!")
         
 def highest_grade():
-    grade = 0
-    for g in list_of_grades:
-        if g > grade:
-            grade = g
+    # grade = 0
+    # for g in list_of_grades:
+        # if g > grade:
+            # grade = g
+    grade = max(list_of_grades)
     return grade
     
 def lower_grade():
-    grade = 10
-    for g in list_of_grades:
-        if g < grade:
-            grade = g
+    # grade = 10
+    # for g in list_of_grades:
+        # if g < grade:
+            # grade = g
+    grade = min(list_of_grades)
     return grade
 
 def votes_above_average(med):
